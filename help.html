@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIcademy Support</title>
+    <style>
+        :root {
+            --bg: #fffaf4;
+            --ink: #221a24;
+            --panel: #ffffff;
+            --line: rgba(34, 26, 36, 0.12);
+            --pink: #ec4899;
+            --orange: #fb923c;
+            --cyan: #22d3ee;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+            background:
+                radial-gradient(circle at top right, rgba(34, 211, 238, 0.16), transparent 22%),
+                radial-gradient(circle at top left, rgba(236, 72, 153, 0.16), transparent 24%),
+                var(--bg);
+            color: var(--ink);
+        }
+
+        .shell {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 24px 18px 40px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0.95), rgba(251, 146, 60, 0.9));
+            color: white;
+            padding: 32px 28px;
+            border-radius: 28px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            margin: 0 0 10px;
+            font-size: clamp(2rem, 4vw, 3rem);
+        }
+
+        .panel {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            padding: 22px;
+            margin-bottom: 16px;
+            box-shadow: 0 12px 24px rgba(34, 26, 36, 0.05);
+        }
+
+        h2, h3 { margin-top: 0; }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            line-height: 1.7;
+        }
+
+        .faq-item + .faq-item {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--line);
+        }
+
+        .contact {
+            display: grid;
+            gap: 12px;
+        }
+
+        a {
+            color: var(--pink);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .small {
+            font-size: 0.92rem;
+            color: rgba(34, 26, 36, 0.72);
+        }
+    </style>
+</head>
+<body>
+    <div class="shell">
+        <section class="hero">
+            <h1>AIcademy Support</h1>
+            <p>Help for billing, subscriptions, account issues, and study-tool troubleshooting.</p>
+        </section>
+
+        <section class="panel">
+            <h2>Quick Help</h2>
+            <ul>
+                <li>Make sure you are signed in before generating study content or loading saved history.</li>
+                <li>If Premium does not refresh, reopen the app and use Restore Purchases from the paywall.</li>
+                <li>If a generation fails, check your network connection and try again with a shorter prompt or fewer attachments.</li>
+                <li>Past Questions and generated material should remain available after relaunch when you are signed into the same account.</li>
+            </ul>
+        </section>
+
+        <section class="panel">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How do I restore Premium?</h3>
+                <p>Open the paywall and tap Restore Purchases. Make sure you are signed into the same Apple ID used for the original subscription.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Why can’t I generate study content?</h3>
+                <p>Generation can fail if the network connection drops, the prompt is empty, or the service is temporarily unavailable. Try again with a shorter prompt and verify you are signed in.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I ask Carlisle questions?</h3>
+                <p>Use the Carlisle button from study and review screens. Free accounts have a limited number of Carlisle questions, while Premium expands access.</p>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Contact</h2>
+            <div class="contact">
+                <div>Support email: <a href="mailto:support@theaistudytool.com">support@theaistudytool.com</a></div>
+                <div>Marketing site: <a href="https://theaistudytool.com/">https://theaistudytool.com/</a></div>
+                <div class="small">If you update the support inbox later, keep this page live at the same URL so the App Store listing does not break.</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
