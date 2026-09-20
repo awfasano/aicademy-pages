@@ -75,76 +75,55 @@
     </style>
 </head>
 <body>
-    <div class="shell">
+    <main class="shell">
         <section class="hero">
             <h1>AIcademy Privacy Policy</h1>
-            <p>Effective date: March 13, 2026</p>
+            <p>Updated September 20, 2026. Version 3.0 features are identified below.</p>
         </section>
-
         <section class="panel">
-            <h2>Overview</h2>
-            <p>
-                AIcademy is an education app that helps users generate study materials, review saved content,
-                and ask follow-up questions with AI assistance. This Privacy Policy explains what information
-                AIcademy collects, how it is used, and the choices users have.
-            </p>
-        </section>
-
-        <section class="panel">
-            <h2>Information We Collect</h2>
+            <h2>What AIcademy collects</h2>
+            <p>AIcademy, operated by Anthony Fasano, helps students create and review study material. Information saved to an account is linked to that account.</p>
             <ul>
-                <li>Account information such as email address and basic profile details.</li>
-                <li>Study content you choose to submit, including prompts, pasted text, saved questions, and uploaded study materials.</li>
-                <li>Subscription and purchase status needed to provide Premium access.</li>
-                <li>Basic usage and diagnostic information to keep the app working and improve reliability.</li>
+                <li><strong>Account details:</strong> name, email address and account identifier.</li>
+                <li><strong>Study material:</strong> text and photos you submit, questions, AI replies, saved notes, cards, quizzes and coaching attempts.</li>
+                <li><strong>Study progress:</strong> answers, missed questions, completed sessions and saved position, used to resume and personalize review.</li>
+                <li><strong>Purchases:</strong> subscription products, transaction history and entitlement status. Apple processes payment; AIcademy does not receive your payment card details.</li>
+                <li><strong>Service records:</strong> request times, usage totals, retry identifiers and error information needed to enforce allowances, prevent duplicate requests, secure accounts and troubleshoot the service. Firebase services also process IP addresses, technical device and SDK information, and diagnostics for reliability and security. Device-attestation information helps check that requests come from the app; it is not used by AIcademy for advertising.</li>
             </ul>
         </section>
-
         <section class="panel">
-            <h2>How We Use Information</h2>
+            <h2>AI processing and your choice</h2>
+            <p>When you request AI generation, chat, grammar help or coaching, the selected text, photos, relevant study material and conversation context are sent through our Firebase backend to <strong>OpenAI</strong> to produce a response. Avoid submitting private information about yourself or other people that is unnecessary for studying.</p>
+            <p>Version 3.0 asks for permission before the first AI request for an account on that device. You can decline and use available saved or built-in study material. Selecting a photo does not grant access to your entire photo library.</p>
+            <p>Version 3.0 requests that OpenAI not save responses as retrievable application state. This is not a promise of zero retention: OpenAI may retain abuse-monitoring data, ordinarily for up to 30 days, and longer for legal or safety reasons. OpenAI says API content is not used for model training by default. See <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI’s API data controls</a>.</p>
+        </section>
+        <section class="panel">
+            <h2>Services that process information</h2>
             <ul>
-                <li>To generate flashcards, quizzes, grammar corrections, and other study material.</li>
-                <li>To save your history and make your study content available across sessions.</li>
-                <li>To manage subscriptions, restore purchases, and provide Premium features.</li>
-                <li>To support the app, respond to issues, and improve performance.</li>
+                <li><strong>Google Firebase:</strong> authentication, cloud storage, account and study records, backend processing and security checks.</li>
+                <li><strong>OpenAI:</strong> the study content and context needed for the AI request you choose to make.</li>
+                <li><strong>Apple and RevenueCat:</strong> transactions, account identifiers and purchase history for Premium access, restoration, fraud prevention and subscription reporting.</li>
             </ul>
+            <p>These services may process information outside your country. Version 3.0 does not use your study material for advertising and does not include a Facebook sign-in or advertising SDK.</p>
         </section>
-
         <section class="panel">
-            <h2>Third-Party Services</h2>
-            <p>
-                AIcademy may use third-party services for authentication, cloud data storage, subscription management,
-                and AI-powered content generation. Those services process data only as needed to provide the app’s features.
-            </p>
+            <h2>Shared libraries and study packs</h2>
+            <p>In version 3.0, joining a class library or contributing a pack makes the contributed content and contributor information available to members of that library. Treat an invite code as private. Anyone given the code may be able to join. Only share material you are allowed to share.</p>
+            <p>Members may copy or export material. Removing content or deleting your account cannot recall copies already saved by someone else. Public-deck features, where available, make published content available to other app users.</p>
         </section>
-
         <section class="panel">
-            <h2>Data Retention</h2>
-            <p>
-                Saved study content and account data are retained while your account remains active, unless you delete
-                the content or request account deletion where available in the app.
-            </p>
+            <h2>Storage and deletion</h2>
+            <p>Saved account and study records generally remain until you remove them or request account deletion. Some local records have limits: free-response coaching retains the most recent 30 completed attempts and one draft per prompt, replacing older entries. The app also keeps local copies of some material and progress for offline use. Original source photos and text are retained on your device only if you choose to keep them; generated study material and progress can sync with your account. Signing out hides account-specific material. Retained local files stay on that device until you remove them or delete the account.</p>
+            <p>Version 3.0 keeps a private response cache available for retry recovery for up to one hour and request receipts for 24 hours. Expired records are scheduled for deletion; physical removal can occur later. Operational service logs and service-provider records follow their applicable retention policies.</p>
+            <p>Use <strong>Profile → Delete Account</strong> to request deletion. You may need to sign in again. Version 3.0 immediately restricts access and performs cloud and subscription-customer cleanup in the background, retrying temporary failures. A limited deletion record is retained temporarily to prevent delayed requests from restoring removed data.</p>
+            <p><strong>Deleting your AIcademy account does not cancel an Apple subscription.</strong> Manage or cancel it in your Apple account’s subscription settings. Apple may retain transaction records under its own policies.</p>
         </section>
-
-        <section class="panel">
-            <h2>Your Choices</h2>
-            <ul>
-                <li>You can edit or remove saved content inside the app where those controls are available.</li>
-                <li>You can restore or manage subscriptions through Apple’s App Store account settings.</li>
-                <li>You can contact support if you need help with account or privacy questions.</li>
-            </ul>
+        <section class="panel" id="choices">
+            <h2>Your choices and support</h2>
+            <p>You can choose which photos and text to submit, decline AI processing, remove saved material using available app controls, leave shared libraries, and request account deletion. Contact us for help accessing, correcting or deleting your information. Include your account email, but do not send passwords or payment details.</p>
+            <p>Privacy and support: <a href="mailto:support@theaistudytool.com">support@theaistudytool.com</a>.</p>
+            <p><a href="help.html">Support</a> · <a href="index.html">AIcademy</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a></p>
         </section>
-
-        <section class="panel">
-            <h2>Contact</h2>
-            <p>
-                For privacy questions, contact
-                <a href="mailto:support@theaistudytool.com">support@theaistudytool.com</a>.
-            </p>
-            <p class="small">
-                This page is intended to satisfy the Privacy Policy URL requirement for App Store Connect and should stay live at a stable URL.
-            </p>
-        </section>
-    </div>
+    </main>
 </body>
 </html>
