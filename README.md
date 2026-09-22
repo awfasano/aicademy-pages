@@ -1,24 +1,27 @@
 # AIcademy Site
 
-Static marketing and support pages for AIcademy.
+Static marketing and support pages for AIcademy, published with GitHub Pages from `main` at https://awfasano.github.io/aicademy-pages/.
 
 ## Pages
 
 - `/` marketing homepage
-- `/help.html` support page
-- `/privacy.html` privacy policy
+- `/aicademy-3.html` version 3 launch article and first-session guide
 - `/study-notes-to-practice.html` five-step study guide
+- `/help.html` support
+- `/privacy.html` privacy
 
-## September 2026 marketing refresh
+## September 21, 2026 launch update
 
-The homepage now links directly to the current App Store release, previews the upcoming version 3 AP features, and links to an original study article. Version 3 features are explicitly marked coming soon until the update is publicly available. The refresh includes responsive styling, keyboard focus states, native FAQ disclosures, canonical/share metadata, a social preview image, robots.txt, and a sitemap. No tracking, signup form, or external font dependency was added.
+Version 3.0 is publicly available on the App Store, verified September 21. The homepage and study guide now describe available features. The launch article provides a practical starting point, and every marketing page links directly to the App Store. Original AP starter resources cover Biology, Calculus AB, and U.S. History; the copy states the relevant product limits.
 
-For a local preview, run `python3 -m http.server 8126` from this directory. The homepage and article were checked at desktop and phone widths, including download links, image loading, article navigation, FAQ toggles, and horizontal overflow. Support and privacy page content was preserved.
+Search metadata includes canonical URLs, social cards, descriptive titles, and factual SoftwareApplication structured data. `sitemap.xml` includes all five public pages. The crawler discovery file must also be published at the origin root, `https://awfasano.github.io/robots.txt`, which is maintained in `awfasano/awfasano.github.io`. The copy here only becomes authoritative if this project is later served at a custom-domain root.
 
-When version 3 is publicly downloadable, update the coming-soon announcement, preview labels, FAQ, and article sidebar together. A review approval by itself is not the public release.
+The Google site-verification meta tag identifies the owner's Search Console property; retain it after verification. Search Console acceptance is distinct from Google indexing or ranking a page.
 
-## Custom domain
+No tracking, external fonts, or mailing-list signup is installed. Support and privacy content is preserved.
 
-This repo is configured for:
+For local preview, run `python3 -m http.server 8126 --bind 127.0.0.1` in this directory.
 
-- `theaistudytool.com`
+## Custom domain status
+
+GitHub Pages currently has no custom domain configured. `theaistudytool.com` uses Cloudflare DNS and serves a separate placeholder. Do not switch canonical URLs or sitemap addresses until the domain is actually connected and HTTPS is working. A custom-domain migration requires updating the canonical, Open Graph, structured-data, robots and sitemap URLs together, then verifying the new Search Console property.
